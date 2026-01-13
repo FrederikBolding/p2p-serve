@@ -1,0 +1,16 @@
+{
+  "name": "p2p-serve",
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "serve": "tsx ./src/main.ts server",
+    "connect": "tsx ./src/main.ts client"
+  },
+  "devDependencies": {
+    "@lavamoat/allow-scripts": "^3.4.1",
+    "@types/node": "^25.0.8",
+    "tsx": "^4.21.0"
+  },
+  "dependencies": {
+    "hyperdht": "^6.28.0"
+  }
+}
