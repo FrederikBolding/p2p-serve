@@ -14,7 +14,7 @@ export async function handleClient(publicKey: string, port = 8000) {
     const socket = dht.connect(publicKey, { reusableSocket: true });
     pipeline(socket, httpSocket, socket, (error) => {
       if (error) {
-        console.error(error);
+        // console.error(error);
       }
     });
   });
